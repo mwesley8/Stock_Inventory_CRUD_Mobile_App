@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="0dp"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_item_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:onClick="inventoryAddOnClick"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/record"
+        android:src="@drawable/add_symbol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/inventory_activity_title"
+        android:textSize="26sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/inventory_recycler_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_ID"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/activity_itemID"
+        android:textSize="26sp"
+        app:layout_constraintRight_toLeftOf="@id/activity_Title"
+        app:layout_constraintStart_toStartOf="@+id/inventory_recycler_view"
+        app:layout_constraintTop_toBottomOf="@id/activity_Title" />
+
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/activity_item"
+        android:textSize="26sp"
+        app:layout_constraintLeft_toRightOf="@id/item_ID"
+        app:layout_constraintStart_toEndOf="@+id/item_ID"
+        app:layout_constraintTop_toBottomOf="@id/activity_Title" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="@string/activity_quantity"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/inventory_recycler_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item"
+        app:layout_constraintTop_toBottomOf="@id/activity_Title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/inventory_recycler_view"
+        android:layout_width="401dp"
+        android:layout_height="384dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_ID" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/perm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:onClick="onUpdateButtonClick"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:layout_marginStart="395dp"
+        android:contentDescription="@string/record"
+        android:src="@drawable/perm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

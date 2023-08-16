@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_item_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/activity_item"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_item_name_edit_text" />
+
+    <EditText
+        android:id="@+id/add_edit_item"
+        android:layout_width="310dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="8dp"
+        android:text=""
+        android:inputType="text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@id/add_item_name_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_name_edit_text" />
+
+    <Button
+        android:id="@+id/add_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="140dp"
+        android:text="@string/submitButtonText"
+        android:onClick="addItemSubmitButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_quantity_text_view" />
+
+    <TextView
+        android:id="@+id/add_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/add_activity_title"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@id/add_item_name_edit_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/activity_itemID"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_text_view" />
+
+    <EditText
+        android:id="@+id/add_item_name_edit_text"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:text=""
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@id/item_name_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_text_view" />
+
+    <TextView
+        android:id="@+id/add_quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="130dp"
+        android:text="@string/activity_quantity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_item_name_edit_text" />
+
+    <EditText
+        android:id="@+id/add_quantity_edit_text"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="116dp"
+        android:text=""
+        android:layout_marginRight="8dp"
+        android:inputType="number"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintLeft_toLeftOf="@id/add_item_name_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_name_edit_text" />
+
+    <Button
+        android:id="@+id/add_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:layout_marginRight="140dp"
+        android:onClick="addItemCancelButton"
+        android:text="@string/cancelButtonText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_item_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
