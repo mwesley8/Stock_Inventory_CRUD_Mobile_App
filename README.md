@@ -1,10 +1,15 @@
 # Stock_Inventory_CRUD_Mobile_App
-I worked as a restaurant manager for a number of years. We conducted inventory twice a week. I was happy when they finally upgraded the process to using an iPad. I have chosen to work on project option. The inventory application sounds like an interesting project to explore.
+
+I worked as a restaurant manager for a number of years. We conducted inventory twice a week. I was happy when they finally upgraded the process to using an iPad. The inventory application sounded like an interesting project to explore.
+
+(Scenario)
 
 I was recently hired as the newest member of my mobile application development team at Mobile2App Company. The Inventory App is one of my latest client projects. The client envisions an application that will allow them to securely log in and perform CRUD operations. If the user does not have an account set up, then the application provides functionality for the user to create an account.
+
 After logging in, the user is able to perform four different use cases. The user would like the ability to view the entire inventory with specific categories of interest. Additionally, the user would like to add and remove items, by specific ID, from the inventory. A specific item in the inventory shall be mutable (increasable, decreasable). Finally, the client would like to be notified when an inventory item has been reduced to zero.
 
 After completion of this project, the user is able to:
+
 Login, the login button visibility dynamically changes depending on text length.
 
 ![image](https://github.com/mwesley8/Stock_Inventory_CRUD_Mobile_App/assets/105822088/efb97448-c95a-4a85-97d2-08fb85e8ac01)
